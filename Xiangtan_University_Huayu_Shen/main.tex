@@ -1,0 +1,126 @@
+% !TeX program = xelatex
+%this will be based on the amsart class, which probably causes more pain than necessary
+%but gets a lot of the formatting the way I like it
+%look for !!!EDIT comments
+\documentclass[reqno,oneside,12pt]{amsart}
+% \usepackage[T1]{fontenc}
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+\usepackage{amsmath,amsfonts,amsthm,amssymb} %provides all math symbols etc.
+%graphics
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage[margin=0.1cm,textfont=it]{caption}
+%set 1" margins:
+\usepackage[left=1in,top=1in,right=1in,bottom=1in,footskip = 0.333in]{geometry}
+%provide additional table capability
+\usepackage{tabularx}
+
+\usepackage{pdfpages}
+\usepackage{multirow} 
+%eqution
+\everydisplay{\setlength{\abovedisplayskip}{10pt}\setlength{\belowdisplayskip}{10pt}}
+%subsubsection
+%\usepackage{titlesec}
+%\titlespacing*{\subsubsection}{0pt}{10pt}{10pt}
+
+\usepackage{titletoc}
+\usepackage{subfig}
+\usepackage{xcolor} % 用于设置表格颜色
+\usepackage{array}         % 用于更灵活的列定义
+\usepackage{booktabs}      % 用于更好的表格线
+\usepackage{colortbl}
+% \setcounter{tocdepth}{4}
+% \setcounter{secnumdepth}{3}
+\usepackage{makecell}
+\usepackage{wrapfig}%
+\usepackage{comment}
+\usepackage[utf8]{inputenc}
+\usepackage{indentfirst}
+\usepackage{enumitem}
+\usepackage{listings}
+
+% 定义黄色背景颜色
+\definecolor{myyellow}{RGB}{255, 255, 0}
+\definecolor{lightgray}{rgb}{0.9, 0.9, 0.9}
+\definecolor{diffgreen}{rgb}{0.0, 0.6, 0.0}
+\definecolor{commentteal}{rgb}{0.13, 0.55, 0.51}
+\definecolor{codegray}{rgb}{0.5, 0.5, 0.5} 
+
+% 设置自动换行并居中对齐
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+
+
+\numberwithin{equation}{section}
+
+\lstdefinestyle{pythonstyle}{
+    language=Python,
+    basicstyle=\ttfamily\small,            % 等宽字体，字号偏小
+    commentstyle=\color{commentteal}\itshape, % 注释：青色 + 斜体
+    keywordstyle=\bfseries,                % 关键字：加粗
+    stringstyle=\color{black},             % 字符串颜色
+    numberstyle=\tiny\color{codegray},     % 左侧行号：极小字号 + 灰色
+    numbers=left,                          % 行号显示在左侧
+    numbersep=12pt,                        % 行号与代码的距离
+    frame=tb,                              % 重点：在代码块顶部 (t) 和底部 (b) 绘制横线
+    rulecolor=\color{black},               % 横线颜色
+    breaklines=true,                       % 自动换行
+    showstringspaces=false,                % 不显示字符串中的空格标记
+    tabsize=4
+}
+\lstset{style=pythonstyle}
+
+\usepackage{cite}
+
+
+
+
+
+\begin{document}
+\begin{center}
+\textbf{ASC 2026 Proposal of XTU}\\  %!!!EDIT
+\end{center}
+
+\begin{flushleft}
+  \textsl{Team members: Huayu Shen, Yangkun Pei, Long Jiang, Muyuan Chen, Tao Li}
+
+  \textsl{Advisor: Peiying Lin}
+\end{flushleft}
+
+
+\titlecontents{section}[0pt]{\vspace{0.25em}\bfseries}{\contentslabel{0.1em}}{\hspace*{0.5em}}{\titlerule*[0.5pc]{.}\contentspage}
+\titlecontents{subsection}[0pt]{\vspace{0.25em}}{\contentslabel{0.1em}}{\hspace*{1.5em}}{\titlerule*[0.5pc]{.}\contentspage}
+\titlecontents{subsubsection}[0pt]{\vspace{0.25em}}{\contentslabel{0.1em}}{\hspace*{2.5em}}{\titlerule*[0.5pc]{.}\contentspage}
+\setcounter{tocdepth}{3}
+
+\tableofcontents
+\clearpage
+
+
+
+\input{1-Activities.tex}%3页
+\newpage
+\input{2-Family.tex}%5页
+\newpage
+\input{3-HPCDesign.tex}%15页
+\newpage
+\input{4-HPL.tex}
+\newpage
+\input{5-HPCG.tex}
+\newpage
+\input{6-Problem1.tex}
+\newpage
+\input{7-Problem2.tex}
+\newpage
+\input{8-ack.tex}
+
+
+
+
+\clearpage
+
+\bibliographystyle{IEEEtran}
+\bibliography{main-blx}
+\end{document}

@@ -1,0 +1,139 @@
+%important---今年新要求：最多不超过3页
+\section{Supercomputing Activities}
+% 湘潭大学是一所享有盛誉的综合性全国重点大学及国家“双一流”建设高校，巍然屹立于伟大领袖毛泽东主席的故乡——湘潭。湘潭大学不仅具备现代化的教学设施，还配备了先进的高性能计算中心。在高性能人才培养方面，学校为学生提供丰富的高性能学习资源，涵盖前沿的专业课程、高水平的学术讲座、创新的研究项目以及强大的高性能计算平台等。这些资源不仅拓宽了学生的视野，也为他们提供了坚实的学术和技术支持。去年首次参加了ASC比赛，虽然没能进入决赛，但46的排名让学生们备受鼓舞，学校也给予了高度认可。接下来，我们将介绍学校(的超算平台和超算相关活动。
+Xiangtan University(XTU) is a prestigious comprehensive national key university and a ``Double First-Class" construction university of the country. 
+Standing majestically in the hometown of the great leader Mao Zedong, XTU is a place of great renown. 
+XTU not only has modern teaching facilities, but also is equipped with an advanced high-performance computing center. 
+In terms of high-performance talent cultivation, the school provides students with abundant high-performance learning resources, including cutting-edge professional courses, high-level academic lectures, innovative research projects, and a powerful high-performance computing platforms. 
+These resources not only broaden students' horizons, but also provide them solid academic and technical support. 
+Last year, we participated in the ASC competition for the first time. 
+Although we didn't make it to the finals, our ranking of 46th was very encouraging for the students, and the school also gave us high recognition.
+Next, we will introduce the university's supercomputing platform and supercomputing-related activities.
+
+\subsection{The HPC Platform of XTU}
+\ 
+% 湘潭大学超级异构并行计算集群是省财政重点支持的“十四五”新基建重点项目，集群包含ClusterEngine高性能计算平台和AIstation人工智能平台，面向全校师生开放。集群计算能力为总浮点峰值性能为509万亿次的CPU双精度理论计算能力（6112个物理核心）和1552万亿次的GPU单精度理论计算能力。集群总体逻辑框架设计图如图所示。
+
+% ClusterEngine高性能计算平台包含1台管理节点，1台登录节点，1台物理监控平台，85个通用计算节点，2个大内存计算节点，共5472个CPU核心，内存总容量44.5TB，节点间通过千兆以太网和Infiniband相互连接。
+% 管理、登录节点配置16个CPU核心，64G内存。
+% 集群总共有两个资源分区，分别是CU、FAT分区。
+% CU分区配置80台通用计算节点，每台计算节点分别配置64个Intel 8358 CPU核心，512G内存；80台cpu计算节点共5120个CPU核心。
+% FAT分区配置2台大内存计算节点，每台节点配置16个intel 6334 CPU核心，1TB内存。
+% 平台的主要功能是面向全校提供高性能科学与工程计算服务，满足各学科领域对于大规模数据处理和大规模科学计算的需求。平台主要应用领域包括：数学、统计学、力学、物理学、化学、化学工程、生物学、地球科学、航天航空科学技术、计算机科学等多学科提供高性能计算环境。
+% 平台提供Intel MKL 2020、FFTW3 3.10、Openblas、Blas等数学库以及Intel MPI 2020、OpenMPI、Mpich等并行环境。支持丰富的应用软件，如MATLAB，OpenFOAM，ABINIT，GROMACS，NAMD等。
+
+% AIstation人工智能平台共包含10个GPU计算节点，共640个CPU核心，80块NVIDIA A100 加速卡，内存总容量5TB，并行存储与高性能计算平台共用，总容量1.3PB，GPU 实测峰值速度可以达到每秒888.9万亿次。
+
+
+Xiangtan University's Super Heterogeneous Parallel Computing Cluster is a key project supported by the provincial finance under the ``4th Five-Year Plan" for new infrastructure construction. 
+The cluster includes ClusterEngine high-performance computing platform and AIstation artificial intelligence platform, and is open to all teachers and students of the university. 
+The computing capacity of the cluster is the theoretical computing capacity of 509 trillion times of CPU double-precision peak performance (6,112 physical cores) and 1552 trillion times of GPU single-precision theoretical computing capacity.
+The overall logical framework design diagram of the cluster is shown in the figure.
+
+The ClusterEngine high-performance computing platform consists of 1 management node, 1 login node, 1 physical monitoring platform, 85 general-purpose computing nodes, 2 large-memory computing nodes, totaling 5472 CPU cores and a total memory capacity of 44.5TB. 
+The nodes are interconnected through Gigabit Ethernet and Infiniband.
+The management and login nodes are each equipped with 16 CPU cores and 64GB of memory.
+
+The cluster has two resource partitions: CU and FAT partitions. 
+The CU partition is configured with 80 general-purpose computing nodes, each with 64 Intel 8358 CPU cores and 512GB of memory, totaling 5,120 CPU cores. 
+The FAT partition is configured with 2 large-memory computing nodes, each with 16 Intel 6334 CPU cores and 1TB of memory. 
+
+
+The main function of the platform is to provide high-performance scientific and engineering computing services to the entire university, meeting the needs of various disciplines for large-scale data processing and large-scale scientific computing. 
+The platform's main application areas include providing high-performance computing environments for mathematics, statistics, mechanics, physics, chemistry, chemical engineering, biology, earth science, aerospace science and technology, computer science, and many other disciplines.
+The platform supports a wide range of application software, such as MATLAB, OpenFOAM, ABINIT,GROMACS, NAMD and so on.
+
+The AIstation artificial intelligence platform consists of 10 GPU computing nodes, with a total of 640 CPU cores, 80 NVIDIA A100 acceleration cards, a total memory capacity of 5TB, and shared with the parallel storage and high-performance computing platform. 
+The total capacity is 1.3PB. 
+The GPU's measured peak speed can reach 888.9 trillion operations per second. 
+This platform supports single-machine and distributed running of mainstream AI frameworks as well as task visualization.
+
+\subsection{HPC Activities}
+\ 
+
+
+% 湘潭大学积极开展与超算相关的学术活动和科研项目。例如，2022年6月，国家超级计算长沙中心副主任彭绍亮教授在湘潭大学作《基于超算的元宇宙算力与应用展望》的学术报告。此外，学校还参与了湖南算力网络融合协同创新平台的建设，推动算力基础设施互联组网和算力资源的高效利用。
+%学校对ASC超算比赛大力支持，去年的超算比赛获奖后，学校官网、学校学生工作部公众号平台和湖南日报都做了相应宣传。
+% 通过这些超算平台和相关活动，湘潭大学不仅为学生提供了丰富的学习资源，还助力学校在高性能计算领域的科研创新和人才培养。
+Xiangtan University actively conducts academic activities and research projects related to supercomputing. 
+For instance, in June 2022, Professor Peng Shaoliang, the deputy director of the National Supercomputing Changsha Center, delivered an academic report titled ``Prospects of Computational Power and Applications of the Metaverse Based on Supercomputing" at Xiangtan University. 
+Moreover, the university has participated in the construction of the Hunan Computing Power Network Integration Collaborative Innovation Platform, promoting the interconnection and networking of computing infrastructure and the efficient utilization of computing resources.
+Furthermore, following our success in last year's supercomputing competition, the university's official website\footnote{https://www.xtu.edu.cn/info/1123/22352.htm}, the student affairs department's official WeChat account\footnote{https://m.voc.com.cn/xhn/news/202503/28109152.html}, and the Hunan Daily\footnote{https://mp.weixin.qq.com/s/dcxK75riuyZ6Pn77fU4OBw} all published relevant reports, demonstrating the university's strong support for the ASC supercomputing competition.
+Through these supercomputing platforms and related activities, Xiangtan University not only provides students with abundant learning resources but also helps the university to carry out scientific research innovation and talent cultivation in the field of high-performance computing.
+
+\subsection{Campus Activities}
+% 为培养高性能计算邻域的人才，学校提供多种资源。在教学方面，学校提供的相关课程包括《并行程序设计》、《计算机组成原理》、《编译原理》、《计算机系统结构》、《操作系统》、《计算机网络原理》、《Linux系统分析与编程》、《算法设计与分析》、《数学分析》、《C语言程序设计》、《图论与组合数学》、《数据结构》、《人工智能》等丰富的课程。
+% 在常规训练方面，通过借助超算习堂等平台、邀请往届ASC参赛人员给学生提供常规练习与培训。为学生们提供单独教室与服务器。
+% 在社团方面，除了组建ASC参赛队伍，学校的ACM队伍也积极参与。
+\ 
+
+To cultivate talents in the field of high-performance computing, the school provides various activities.
+In terms of courses, the relevant courses offered by the school include ``Parallel Programming", ``Computer Organization Principles", ``Syntax and Semantics of Compilers", ``Computer System Architecture", ``Operating Systems", ``Principles of Computer Networks", ``Linux System Analysis and Programming", ``Algorithm Design and Analysis", ``Mathematical Analysis", ``C Programming", ``Graph Theory and Combinatorial Mathematics", ``Data Structures", ``Artificial Intelligence", etc., which are a wealth of courses.
+In terms of regular training, through platforms such as EasyHPC, the school invites previous ASC participants to provide regular practice and training for students. 
+Separate classrooms and servers are also provided for students.
+In terms of interest groups, in addition to forming ASC competition teams, the school's ACM team also actively participates.
+
+\subsection{Research and Applications}
+\ 
+
+% In terms of research and applications, the school has carried out a number of research projects in the field of high-performance computing, including the development of high-performance computing software, the optimization of computer system architecture, the design of high-performance computing algorithms, and the application of high-performance computing in various fields such as scientific research, engineering design, and industrial production.
+% In the following, we will briefly introduce two researches and applications.
+
+
+% 相关研究工作:陈志文,李子轩,陈依彼,林培英,王成军
+% .Halo: A Hybrid PMem-DRAM Persistent Hash Index with Fast Recovery.(存储优化研究)
+% Latency-Driven Model Placement for Effiffifficient Edge Intelligence Service(DNN的并行优化)
+% cuFastTucker: A Novel Sparse FastTucker Decomposition For HHLST on Multi-GPUs. (稀疏矩阵分解)
+
+% 湘大超算上的应用有?
+% 湘潭大学在超算领域的研究和应用成果显著，包括并行解法器、高性能计算软件的开发、计算机系统架构的优化、高性能计算算法的设计以及高性能计算在科学研究、工程设计、工业生产等领域的应用。
+
+% 如与北京应用物理与计算数学研究所共同研制的JXPAMG解法器，凭借其算法创新、高效并行性能及多领域适用性，已成为高性能并行计算软件平台JASMIN的默认线性解法器，综合性能优于国际上流行的同类解法器。求解器大幅提高了一些国防应用模型问题的计算效率，在科学计算与工程仿真领域具有重要影响力。
+
+% 化学驱模型因具有高油田采收率的特性而被广泛应用于复杂油藏数值模拟领域中, 由于其复杂性, 导致其模拟时间通常很长.因此针对化学驱油藏数值模拟问题,  采用 CPU-GPU 异构并行离散技术将化学驱模型进行离散, 数值实验结果表明 CPU-GPU 异构并行离散化方法具有良好的加速效果, 如针对网格规模约为 125 万的算例, 新算法与串行算法相比离散时间提速 3.99 倍; 接着针对水相压力方程和组分浓度方程, 基于 CPU-GPU 异构体系设计了一种算子复杂度低、加速比高和稳健性好的非光滑聚集代数多重网格预条件共轭梯度迭代求解算法 (UA-AMG-CG),并对相应的程序模块进行了研制, 数值实验结果表明 CPU-GPU 异构体系的化学驱求解算法具有良好的加速效果, 如针对网格规模约为 125 万的算例, 新算法与串行算法相比水相压力方程求解时间提速 7.05 倍。
+
+The research and application achievements of XTU in the field of supercomputing are remarkable, including parallel solvers, the development of high performance computing software, the optimization of computer system architecture, the design of high performance computing algorithms and the application of high performance computing in scientific research, engineering design, industrial production and other fields.
+The following is only a brief list.
+
+For example, the JXPAMG solver jointly developed with the Beijing Institute of Applied Physics and Computational Mathematics has become the default linear solver of JASMIN, a high-performance parallel computing software platform, with its algorithm innovation, efficient parallel performance and multi-field applicability, and its comprehensive performance is better than the international popular similar solvers. 
+The solver has greatly improved the computational efficiency of some defense application model problems, and has an important influence in the field of scientific calculation and engineering simulation.
+
+The chemical flooding model is widely used in the numerical simulation of complex reservoir because of its high oil recovery. 
+Therefore, for the numerical simulation of chemical flooding reservoir, CPU-GPU heterogeneous parallel discretization technology is used to discretized the chemical flooding model. 
+The numerical experiment results show that the CPU-GPU heterogeneous parallel discretization method has a good acceleration effect. 
+For example, for the calculation example with a grid size of about 1.25 million, The speed of the new algorithm is 3.99 times faster than that of the serial algorithm. Then, a non-smooth aggregation algebraic multi-grid preconditioned conjugate gradient iterative algorithm (UA-AMG-CG) based on CPU-GPU heterogeneous system with low operator complexity, high acceleration ratio and good robustness is designed for water phase pressure equation and component concentration equation, and the corresponding program module is developed. 
+
+
+
+
+
+\subsection{Key Achievements}
+\ 
+
+% 如上所述，湘潭大学在超算方面的研究包括了多个方面，其成果发表于数学、计算机等领域的国际期刊和会议。如CCF Transactions on High Performance Computing, Applicable Analysis, Mathematical Methods in the Applied Sciences, International Conference on Management of Data(SIGMOD) International Conference on Very Large Data Bases(VLDB)、 IEEE Transactions on Parallel and Distributed Systems(TPDS)等期刊会议，以下是其中两项成果的简要介绍：
+
+As mentioned above, XTU's research in supercomputing includes many aspects, and  have  published multiple papers in international journals and conferences in the fields of mathematics and computer science and so on.
+Such as \textit{CCF Transactions on High Performance Computing, Applicable Analysis, Mathematical Methods in the Applied Sciences, International Conference on Management of Data(SIGMOD) International Conference on Very Large Data Bases(VLDB), IEEE Transactions on Parallel and Distributed Systems(TPDS)} and other journal conferences, here is a brief overview of two of the outcomes:
+
+\textbf{Innovation 1: Parallel Reservoir Simulators on Tianhe-2 \cite{guan2015robust}.}
+
+Parallel reservoir simulators are now widely used with availability of super computers. 
+Modern massively parallel supercomputers demonstrate great power for simulating large-scale reservoir models. However, improving scalability and efficiency for fully implicit methods on emerging parallel architectures is still challenging. 
+In this work, we present a robust discretization together with a parallel linear solver algorithm; and we explore the parallel implementation on the world’s fastest supercomputer Tianhe-2.
+Starting with a general compositional model, we focus on the black oil model and developed Parallel eXtension Framework for parallelizing the serial simulator. 
+A parallel preconditioner based on fast auxiliary space preconditioning (FASP) is applied to solve the Jacobian system arising from the fully implicit discretization. The parallel simulator was validated using large-scale black oil benchmark problems, for which parallel scalabilities were tested. 
+Giant reservoir models with over 100 million grid blocks have been simulated within a few minutes, and test the strong scalability of AMG solver with 1 billion unknown. We also demonstrate the parallelization and acceleration using Intel Xeon Phi coprocessors. 
+In the end, the efficiency of the parallel simulator is illustrated by a giant reservoir using up to 10,000 cores, for which the CPU and communication time are summarized for the linear and nonlinear algorithms.
+
+\textbf{Innovation 2: Efficient Algorithms for the Maxwell Eigenvalue Problem \cite{zhou2014two}.}
+The Maxwell eigenvalue problem is a basic and important computational model in computational electromagnetism, e.g., in regard to electromagnetic waveguides and resonances in cavities.
+This work  proposed two two-grid methods for the Maxwell eigenvalue problem.
+The new two-grid schemes reduce the solution of the Maxwell eigenvalue problem on a fine grid to one linear indefinite Maxwell equation on the same fine grid and an original eigenvalue problem on a much coarser grid. 
+The new schemes, therefore, save total computational cost. 
+The error estimates reveals that the two-grid methods maintain asymptotically optimal accuracy, and the numerical experiments presented confirm the theoretical results.
+
+% 存储的优化研究
+% 稀疏矩阵分解研究.
+% 发表于TPC,VLDB
+%https://www.xtu.edu.cn/info/1063/1087.htm 
+% 高效并行算法与解法器:

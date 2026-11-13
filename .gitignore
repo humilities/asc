@@ -1,0 +1,27 @@
+# LaTeX build products
+Xiangtan_University_Huayu_Shen/build/
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.run.xml
+*.synctex.gz
+*.toc
+*.xdv
+
+# Local/editor and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local benchmark results and binaries
+week1-hpl-hpcg/results/
+week1-results/
+*.out
+*.o
+*.so
+*.exe

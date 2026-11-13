@@ -32,6 +32,10 @@ mkdir -p "$OUT_ROOT"
 ```bash
 export HPL_BIN="$(find ~/asc-week1/src/hpl-2.3 -type f -name xhpl | head -n 1)"
 export HPCG_BIN="$(find ~/asc-week1/src/hpcg -type f -name xhpcg | head -n 1)"
+export WEEK1=$HOME/asc-week1/week1-hpl-hpcg
+export OUT_ROOT=$HOME/asc-week1/results
+mkdir -p "$OUT_ROOT"
+"$WEEK1/collect_env.sh" "$OUT_ROOT/environment.txt"
 ```
 
 ---
@@ -43,8 +47,9 @@ export HPCG_BIN="$(find ~/asc-week1/src/hpcg -type f -name xhpcg | head -n 1)"
 1. 运行 `collect_env.sh`。核对 `lscpu`、`free -h`、`numactl --hardware`、网卡、`mpirun --version`、编译器版本、`ldd` 与作业分配一致。没有某个命令时记录 `unavailable` 即可。
 2. 保存源码包或 Git 提交号、Makefile/编译参数、二进制 SHA256。两项程序先各以最小可行规模运行一次，排除动态库、MPI 和输入格式问题。
 3. 每位队员画出 HPL 的「分块 LU → BLAS 计算与面板通信」以及 HPCG 的「SpMV / SymGS / 多重网格 / MPI halo」流程，指出 HPL 偏计算、HPCG 更受内存与通信影响。阅读源码中对应入口和计时/验证逻辑，在笔记中写出文件名与函数名。
+4. ![image-20261113112027249](C:\Users\Rugers\AppData\Roaming\Typora\typora-user-images\image-20261113112027249.png)
 
-提交到各自github分支：environment.txt文件 以及 wsl2-start.md中的冒烟测试运行结果（具体输出结果，命令详见wsl2-start.md![image-20261113105624169](C:\Users\Rugers\AppData\Roaming\Typora\typora-user-images\image-20261113105624169.png))
+提交到各自github分支：environment.txt文件 以及 wsl2-start.md中的冒烟测试运行结果（具体输出结果，命令详见wsl2-start.md hpl输出结果可以提交stdout.log hpcg最好按如下命令执行然后提交![image-20261113105624169](C:\Users\Rugers\AppData\Roaming\Typora\typora-user-images\image-20261113105624169.png))
 
 **当天验收**：两项二进制可启动；环境清单、构建命令与源码版本完整；能解释 rank、线程、节点、进程网格的区别。
 

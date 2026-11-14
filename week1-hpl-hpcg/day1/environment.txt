@@ -1,0 +1,224 @@
+Timestamp: 2026-11-13T18:14:45+08:00
+Host: DESKTOP-KV1V4R8
+Working directory: /home/hgzs/asc-week1/week1-hpl-hpcg
+Job ID: none
+HPL_BIN: /home/hgzs/asc-week1/src/hpl-2.3/bin/Linux_PII_CBLAS/xhpl
+HPCG_BIN: /home/hgzs/asc-week1/src/hpcg/bin/xhpcg
+
+===== uname =====
+Linux DESKTOP-KV1V4R8 6.18.40.1-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Fri Jul 31 22:12:15 UTC 2026 x86_64 GNU/Linux
+
+===== lscpu =====
+Architecture:                            x86_64
+CPU op-mode(s):                          32-bit, 64-bit
+Address sizes:                           39 bits physical, 48 bits virtual
+Byte Order:                              Little Endian
+CPU(s):                                  24
+On-line CPU(s) list:                     0-23
+Vendor ID:                               GenuineIntel
+Model name:                              Intel(R) Core(TM) i7-14650HX
+CPU family:                              6
+Model:                                   183
+Thread(s) per core:                      2
+Core(s) per socket:                      12
+Socket(s):                               1
+Stepping:                                1
+BogoMIPS:                                4838.39
+Flags:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology tsc_reliable nonstop_tsc cpuid tsc_known_freq pni pclmulqdq vmx ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves avx_vnni vnmi umip waitpkg gfni vaes vpclmulqdq rdpid movdiri movdir64b fsrm md_clear serialize ibt flush_l1d arch_capabilities
+Virtualization:                          VT-x
+Hypervisor vendor:                       Microsoft
+Virtualization type:                     full
+L1d cache:                               576 KiB (12 instances)
+L1i cache:                               384 KiB (12 instances)
+L2 cache:                                24 MiB (12 instances)
+L3 cache:                                30 MiB (1 instance)
+NUMA node(s):                            1
+NUMA node0 CPU(s):                       0-23
+Vulnerability Gather data sampling:      Not affected
+Vulnerability Ghostwrite:                Not affected
+Vulnerability Indirect target selection: Not affected
+Vulnerability Itlb multihit:             Not affected
+Vulnerability L1tf:                      Not affected
+Vulnerability Mds:                       Not affected
+Vulnerability Meltdown:                  Not affected
+Vulnerability Mmio stale data:           Not affected
+Vulnerability Old microcode:             Not affected
+Vulnerability Reg file data sampling:    Mitigation; Clear Register File
+Vulnerability Retbleed:                  Mitigation; Enhanced IBRS
+Vulnerability Spec rstack overflow:      Not affected
+Vulnerability Spec store bypass:         Mitigation; Speculative Store Bypass disabled via prctl
+Vulnerability Spectre v1:                Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerability Spectre v2:                Mitigation; Enhanced / Automatic IBRS; IBPB conditional; PBRSB-eIBRS SW sequence; BHI BHI_DIS_S
+Vulnerability Srbds:                     Not affected
+Vulnerability Tsa:                       Not affected
+Vulnerability Tsx async abort:           Not affected
+Vulnerability Vmscape:                   Not affected
+
+===== free =====
+               total        used        free      shared  buff/cache   available
+Mem:            15Gi       850Mi        13Gi       4.3Mi       1.5Gi        14Gi
+Swap:          4.0Gi          0B       4.0Gi
+
+===== numactl =====
+available: 1 nodes (0)
+node 0 cpus: 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23
+node 0 size: 15843 MB
+node 0 free: 13716 MB
+node distances:
+node     0 
+   0:   10 
+
+===== mpirun =====
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    version
+
+===== mpicc =====
+gcc (Ubuntu 15.2.0-16ubuntu1) 15.2.0
+Copyright (C) 2025 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+
+===== gcc =====
+gcc (Ubuntu 15.2.0-16ubuntu1) 15.2.0
+Copyright (C) 2025 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+
+===== g++ =====
+g++ (Ubuntu 15.2.0-16ubuntu1) 15.2.0
+Copyright (C) 2025 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+
+===== gfortran =====
+GNU Fortran (Ubuntu 15.2.0-16ubuntu1) 15.2.0
+Copyright (C) 2025 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+
+===== clang =====
+unavailable
+
+===== nvidia-smi =====
+GPU 0: NVIDIA GeForce RTX 4060 Laptop GPU (UUID: GPU-04f76423-acbf-83dc-0883-c4480b115c02)
+
+===== rocminfo =====
+unavailable
+
+===== /home/hgzs/asc-week1/src/hpl-2.3/bin/Linux_PII_CBLAS/xhpl =====
+dd7b2f3bf854eaf50bddf077829a163f85399f9576e3dbfa5d48634fb5a37ddd  /home/hgzs/asc-week1/src/hpl-2.3/bin/Linux_PII_CBLAS/xhpl
+	linux-vdso.so.1 (0x00007895c2a32000)
+	libopenblas.so.0 => /usr/lib/x86_64-linux-gnu/libopenblas.so.0 (0x00007895c0508000)
+	libmpi.so.40 => /usr/lib/x86_64-linux-gnu/libmpi.so.40 (0x00007895c0000000)
+	libc.so.6 => /usr/lib/x86_64-linux-gnu/libc.so.6 (0x00007895bfc00000)
+	libm.so.6 => /usr/lib/x86_64-linux-gnu/libm.so.6 (0x00007895c03e2000)
+	libmvec.so.1 => /usr/lib/x86_64-linux-gnu/libmvec.so.1 (0x00007895bff05000)
+	libgfortran.so.5 => /usr/lib/x86_64-linux-gnu/libgfortran.so.5 (0x00007895bf800000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007895c2a34000)
+	libucc.so.1 => /usr/lib/x86_64-linux-gnu/libucc.so.1 (0x00007895bfec3000)
+	libpsm2.so.2 => /usr/lib/x86_64-linux-gnu/libpsm2.so.2 (0x00007895bfe5b000)
+	libfabric.so.1 => /usr/lib/x86_64-linux-gnu/libfabric.so.1 (0x00007895bf65b000)
+	libucp.so.0 => /usr/lib/x86_64-linux-gnu/libucp.so.0 (0x00007895bf4e3000)
+	libucs.so.0 => /usr/lib/x86_64-linux-gnu/libucs.so.0 (0x00007895bfb90000)
+	libopen-pal.so.80 => /usr/lib/x86_64-linux-gnu/libopen-pal.so.80 (0x00007895bf392000)
+	libevent_core-2.1.so.7 => /usr/lib/x86_64-linux-gnu/libevent_core-2.1.so.7 (0x00007895bfe26000)
+	libevent_pthreads-2.1.so.7 => /usr/lib/x86_64-linux-gnu/libevent_pthreads-2.1.so.7 (0x00007895c03dd000)
+	libhwloc.so.15 => /usr/lib/x86_64-linux-gnu/libhwloc.so.15 (0x00007895bf32d000)
+	libpmix.so.2 => /usr/lib/x86_64-linux-gnu/libpmix.so.2 (0x00007895bf000000)
+	libgcc_s.so.1 => /usr/lib/x86_64-linux-gnu/libgcc_s.so.1 (0x00007895bf2ff000)
+	libnuma.so.1 => /usr/lib/x86_64-linux-gnu/libnuma.so.1 (0x00007895c03cf000)
+	librdmacm.so.1 => /usr/lib/x86_64-linux-gnu/librdmacm.so.1 (0x00007895bf2de000)
+	libefa.so.1 => /usr/lib/x86_64-linux-gnu/libefa.so.1 (0x00007895bfb81000)
+	libibverbs.so.1 => /usr/lib/x86_64-linux-gnu/libibverbs.so.1 (0x00007895bf2b9000)
+	libuct.so.0 => /usr/lib/x86_64-linux-gnu/libuct.so.0 (0x00007895bf26f000)
+	libucm.so.0 => /usr/lib/x86_64-linux-gnu/libucm.so.0 (0x00007895bf252000)
+	libnl-3.so.200 => /usr/lib/x86_64-linux-gnu/libnl-3.so.200 (0x00007895befdd000)
+	libudev.so.1 => /usr/lib/x86_64-linux-gnu/libudev.so.1 (0x00007895bef96000)
+	libmunge.so.2 => /usr/lib/x86_64-linux-gnu/libmunge.so.2 (0x00007895bf24a000)
+	libnl-route-3.so.200 => /usr/lib/x86_64-linux-gnu/libnl-route-3.so.200 (0x00007895beefa000)
+
+===== /home/hgzs/asc-week1/src/hpcg/bin/xhpcg =====
+1b887050659039cc81cbc4d040ce82224905b59c93f2e527f9a294a241238143  /home/hgzs/asc-week1/src/hpcg/bin/xhpcg
+	linux-vdso.so.1 (0x000071cc53b7b000)
+	libmpi.so.40 => /usr/lib/x86_64-linux-gnu/libmpi.so.40 (0x000071cc53600000)
+	libstdc++.so.6 => /usr/lib/x86_64-linux-gnu/libstdc++.so.6 (0x000071cc53200000)
+	libgcc_s.so.1 => /usr/lib/x86_64-linux-gnu/libgcc_s.so.1 (0x000071cc53b12000)
+	libc.so.6 => /usr/lib/x86_64-linux-gnu/libc.so.6 (0x000071cc52e00000)
+	libucc.so.1 => /usr/lib/x86_64-linux-gnu/libucc.so.1 (0x000071cc53ad0000)
+	libpsm2.so.2 => /usr/lib/x86_64-linux-gnu/libpsm2.so.2 (0x000071cc53a66000)
+	libfabric.so.1 => /usr/lib/x86_64-linux-gnu/libfabric.so.1 (0x000071cc5305b000)
+	libucp.so.0 => /usr/lib/x86_64-linux-gnu/libucp.so.0 (0x000071cc52c88000)
+	libucs.so.0 => /usr/lib/x86_64-linux-gnu/libucs.so.0 (0x000071cc539f6000)
+	libopen-pal.so.80 => /usr/lib/x86_64-linux-gnu/libopen-pal.so.80 (0x000071cc534af000)
+	libm.so.6 => /usr/lib/x86_64-linux-gnu/libm.so.6 (0x000071cc52b62000)
+	libevent_core-2.1.so.7 => /usr/lib/x86_64-linux-gnu/libevent_core-2.1.so.7 (0x000071cc53026000)
+	libevent_pthreads-2.1.so.7 => /usr/lib/x86_64-linux-gnu/libevent_pthreads-2.1.so.7 (0x000071cc539ef000)
+	libhwloc.so.15 => /usr/lib/x86_64-linux-gnu/libhwloc.so.15 (0x000071cc52afd000)
+	libpmix.so.2 => /usr/lib/x86_64-linux-gnu/libpmix.so.2 (0x000071cc52800000)
+	/lib64/ld-linux-x86-64.so.2 (0x000071cc53b7d000)
+	libnuma.so.1 => /usr/lib/x86_64-linux-gnu/libnuma.so.1 (0x000071cc539e1000)
+	librdmacm.so.1 => /usr/lib/x86_64-linux-gnu/librdmacm.so.1 (0x000071cc52adc000)
+	libefa.so.1 => /usr/lib/x86_64-linux-gnu/libefa.so.1 (0x000071cc539d0000)
+	libibverbs.so.1 => /usr/lib/x86_64-linux-gnu/libibverbs.so.1 (0x000071cc52ab7000)
+	libuct.so.0 => /usr/lib/x86_64-linux-gnu/libuct.so.0 (0x000071cc52a6d000)
+	libucm.so.0 => /usr/lib/x86_64-linux-gnu/libucm.so.0 (0x000071cc52a50000)
+	libnl-3.so.200 => /usr/lib/x86_64-linux-gnu/libnl-3.so.200 (0x000071cc527dd000)
+	libudev.so.1 => /usr/lib/x86_64-linux-gnu/libudev.so.1 (0x000071cc52796000)
+	libmunge.so.2 => /usr/lib/x86_64-linux-gnu/libmunge.so.2 (0x000071cc534a7000)
+	libnl-route-3.so.200 => /usr/lib/x86_64-linux-gnu/libnl-route-3.so.200 (0x000071cc526fa000)
+
+===== 补充信息（人工补写，2026-11-13） =====
+
+--- OS release ---
+PRETTY_NAME="Ubuntu 26.04.1 LTS"
+VERSION_ID="26.04"
+VERSION_CODENAME=resolute
+WSL kernel: 6.18.40.1-microsoft-standard-WSL2
+WSL version (Windows side): 3.0.1.0
+
+--- 包的精确版本 ---
+build-essential	12.12ubuntu2.26.04.2
+g++	4:15.2.0-5ubuntu1
+gcc	4:15.2.0-5ubuntu1
+gfortran	4:15.2.0-5ubuntu1
+libopenblas-dev	0.3.32+ds-5
+libopenblas0-pthread	0.3.32+ds-5
+libopenmpi-dev	5.0.10-1
+make	4.4.1-3
+openmpi-bin	5.0.10-1
+
+--- OpenMPI ---
+mpirun 路径: /usr/bin/mpirun
+mpirun 版本(从包信息): 5.0.10-1
+Open MPI v5.0.10
+
+https://www.open-mpi.org/community/help/
+MPI 实现: OpenMPI (apt)
+
+--- BLAS ---
+Best: /usr/lib/x86_64-linux-gnu/openblas-pthread/libblas.so.3
+Value: /usr/lib/x86_64-linux-gnu/openblas-pthread/libblas.so.3
+Best: /usr/lib/x86_64-linux-gnu/openblas-pthread/liblapack.so.3
+Value: /usr/lib/x86_64-linux-gnu/openblas-pthread/liblapack.so.3
+	libopenblas.so.0 (libc6,x86-64) => /usr/lib/x86_64-linux-gnu/libopenblas.so.0
+BLAS 实现: OpenBLAS (pthread 变体)
+
+--- 编译器 ---
+gcc (Ubuntu 15.2.0-16ubuntu1) 15.2.0
+GNU Fortran (Ubuntu 15.2.0-16ubuntu1) 15.2.0
+mpicc: Open MPI 5.0.10 (Language: C)
+
+--- 源码身份 ---
+HPL: Netlib 2.3, tarball 32c5c17d22330e6f2337b681aded51637fb6008d3f0eb7c277b163fadd612830  hpl-2.3.tar.gz
+HPCG: commit 114602d458d1034faa52b71e4c15aba9b3a17698, repo https://github.com/hpcg-benchmark/hpcg.git
+
+--- 构建命令 ---
+HPL : cd ~/asc-week1/src/hpl-2.3 && cp setup/Make.Linux_PII_CBLAS Make.Linux_PII_CBLAS && make arch=Linux_PII_CBLAS TOPdir=$PWD CC=mpicc LINKER=mpicc MPinc= MPlib= LAinc= LAlib=-lopenblas   # 必须串行，-j 会触发 Make.top 递归竞争
+HPCG: cd ~/asc-week1/src/hpcg && cp setup/Make.Linux_MPI Make.Linux_MPI && make arch=Linux_MPI HPCG_DIR=$PWD TOPdir=$PWD CXX=mpicxx LINKER=mpicxx -j 8
+
+--- 二进制 SHA256 ---
+dd7b2f3bf854eaf50bddf077829a163f85399f9576e3dbfa5d48634fb5a37ddd  /home/hgzs/asc-week1/src/hpl-2.3/bin/Linux_PII_CBLAS/xhpl
+1b887050659039cc81cbc4d040ce82224905b59c93f2e527f9a294a241238143  /home/hgzs/asc-week1/src/hpcg/bin/xhpcg
+
+--- 运行环境说明 ---
+WSL2, 默认 NAT 网络, 无 .wslconfig 覆盖 (内存上限为宿主机一半 = 15 GiB, swap 4 GiB)
+宿主机: i7-14650HX (16 核 24 线程), 31.7 GiB RAM, Windows 11 22631
+OMP_NUM_THREADS=1 (MPI-only 基线)
+运行前脚本已把 CRLF 行尾转成 LF (原仓库脚本在 Windows 上检出为 CRLF)

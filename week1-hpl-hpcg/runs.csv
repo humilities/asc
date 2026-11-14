@@ -1,1 +1,7 @@
 run_id,date,benchmark,scope,nodes,ranks,threads,N,NB,P,Q,nx,ny,nz,runtime_s,gflops,elapsed_s,valid,notes
+HPL_20261113_181446_kYu5Rp,2026-11-13,HPL,smoke,1,1,1,2048,128,1,1,,,,"0.10","56.77",0,PASSED,"WSL2 冒烟测试・单 rank・OpenBLAS pthread"
+HPL_20261113_181637_tEmyB4,2026-11-13,HPL,baseline,1,4,1,11520,192,2,2,,,,"5.30","192.28",6,PASSED,"第 2 天基线 #1・4 ranks 2x2・N=11520 约 0.99 GiB"
+HPL_20261113_181643_74gUhK,2026-11-13,HPL,baseline,1,4,1,11520,192,2,2,,,,"5.32","191.79",6,PASSED,"第 2 天基线 #2・与 #1 相差约 0.25%"
+HPCG_20261113_181446_CwiUlb,2026-11-13,HPCG,smoke,1,1,1,,,,,,32,32,32,"61.14","4.51",62,VALID,"WSL2 冒烟测试・单 rank・局部 32^3・60 秒"
+HPCG_20261113_181649_loGAOH,2026-11-13,HPCG,baseline,1,4,1,,,,,,64,64,64,"61.28","6.52",69,VALID,"第 2 天基线 #1・4 ranks・每 rank 局部 64^3"
+HPCG_20261113_181758_O0VWe4,2026-11-13,HPCG,baseline,1,4,1,,,,,,64,64,64,"60.61","6.59",69,VALID,"第 2 天基线 #2・与 #1 相差约 1.1%"

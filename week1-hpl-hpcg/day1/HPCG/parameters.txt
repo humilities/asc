@@ -1,0 +1,4 @@
+RANKS=1 NX=32 NY=32 NZ=32 SECONDS=60 THREADS=1 LAUNCHER=mpirun
+HPCG_BIN=/home/hgzs/asc-week1/src/hpcg/bin/xhpcg
+exit_code=0
+elapsed_wall_s=62

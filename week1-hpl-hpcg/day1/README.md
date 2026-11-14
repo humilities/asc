@@ -1,6 +1,6 @@
 # 第 1 天交付物：环境与程序
 
-对应 `README.md` 第 1 天（第 45–54 行）与 `WSL2-START.md` 的冒烟测试要求。
+对应 `README.md` 第 1 天（第 44–53 行）与 `WSL2-START.md` 的冒烟测试要求。
 
 - 执行日期：2026-11-13
 - 执行环境：WSL2（Ubuntu 26.04.1 LTS，内核 6.18.40.1-microsoft-standard-WSL2）
@@ -94,7 +94,7 @@ export OUT_ROOT=$HOME/asc-week1/results
 
 ## 5. 已知问题与说明
 
-1. `WSL2-START.md:7`、`:115` 与 `README.md:15` 中的 `/mnt/d/c/ASC/...` 是作者机器的路径，本机实际为 `E:\Program Files\DeepSeek\workspace\asc`（WSL 中 `/mnt/e/Program Files/DeepSeek/workspace/asc`），复制时需替换。
+1. `WSL2-START.md:7`、`:115` 与 `README.md:14` 中的 `/mnt/d/c/ASC/...` 是作者机器的路径，本机实际为 `E:\Program Files\DeepSeek\workspace\asc`（WSL 中 `/mnt/e/Program Files/DeepSeek/workspace/asc`），复制时需替换。
 2. 仓库脚本在 Windows 上检出为 CRLF，直接执行会报 `env: $'bash\r': No such file or directory`；需 `sed -i 's/\r$//' *.sh`。
 3. `mpirun --version` 会打印 `Sorry! You were supposed to get help about: version`，是 Ubuntu 26.04 的 OpenMPI 包缺帮助文件所致，不影响运行；版本号以 `dpkg-query -W openmpi-bin` 为准（5.0.10-1）。
-4. `environment.txt` 前 165 行为 `collect_env.sh` 原样输出，其后为人工补写的“补充信息”段（OS、包版本、源码身份、构建命令、二进制指纹、运行环境说明），依据 `README.md:43` 的要求。
+4. `environment.txt` 前 165 行为 `collect_env.sh` 原样输出，其后为人工补写的“补充信息”段（OS、包版本、源码身份、构建命令、二进制指纹、运行环境说明），依据 `README.md:42` 的要求。

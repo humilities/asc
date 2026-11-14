@@ -1,0 +1,4 @@
+RANKS=4 NX=64 NY=64 NZ=64 SECONDS=60 THREADS=1 LAUNCHER=mpirun
+HPCG_BIN=/home/hgzs/asc-week1/src/hpcg/bin/xhpcg
+exit_code=0
+elapsed_wall_s=69

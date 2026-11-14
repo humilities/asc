@@ -1,0 +1,4 @@
+RANKS=4 P=2 Q=2 N=11520 NB=192 THREADS=1 LAUNCHER=mpirun
+HPL_BIN=/home/hgzs/asc-week1/src/hpl-2.3/bin/Linux_PII_CBLAS/xhpl
+exit_code=0
+elapsed_wall_s=6

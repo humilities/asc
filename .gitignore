@@ -20,8 +20,8 @@ Thumbs.db
 
 # Local benchmark results and binaries
 week1-hpl-hpcg/results/
-# week1 交付物：HPL 冒烟测试的 stdout.log 是判据文件，需要入库
-!week1-hpl-hpcg/day1/**/*.log
+# week1 交付物：HPL/HPCG 的 stdout.log、stderr.log 是判据文件，需要入库
+!week1-hpl-hpcg/day*/**/*.log
 week1-results/
 *.out
 *.o

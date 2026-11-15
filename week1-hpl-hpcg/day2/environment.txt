@@ -1,0 +1,163 @@
+Timestamp: 2026-11-15T16:26:08+08:00
+Host: Rugers
+Working directory: /home/rugers/asc-week1
+Job ID: none
+HPL_BIN: /home/rugers/asc-week1/src/hpl-2.3/bin/Linux_PII_CBLAS/xhpl
+HPCG_BIN: /home/rugers/asc-week1/src/hpcg/bin/xhpcg
+
+===== uname =====
+Linux Rugers 6.6.114.1-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Mon Dec  1 20:46:23 UTC 2025 x86_64 GNU/Linux
+
+===== lscpu =====
+Architecture:                            x86_64
+CPU op-mode(s):                          32-bit, 64-bit
+Address sizes:                           48 bits physical, 48 bits virtual
+Byte Order:                              Little Endian
+CPU(s):                                  12
+On-line CPU(s) list:                     0-11
+Vendor ID:                               AuthenticAMD
+Model name:                              AMD Ryzen 5 9600X 6-Core Processor
+CPU family:                              26
+Model:                                   68
+Thread(s) per core:                      2
+Core(s) per socket:                      6
+Socket(s):                               1
+Stepping:                                0
+BogoMIPS:                                7799.80
+Flags:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl tsc_reliable nonstop_tsc cpuid extd_apicid tsc_known_freq pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy svm cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw topoext perfctr_core ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 erms invpcid avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves avx_vnni avx512_bf16 clzero xsaveerptr arat npt nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold v_vmsave_vmload avx512vbmi umip avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid fsrm avx512_vp2intersect
+Virtualization:                          AMD-V
+Hypervisor vendor:                       Microsoft
+Virtualization type:                     full
+L1d cache:                               288 KiB (6 instances)
+L1i cache:                               192 KiB (6 instances)
+L2 cache:                                6 MiB (6 instances)
+L3 cache:                                32 MiB (1 instance)
+NUMA node(s):                            1
+NUMA node0 CPU(s):                       0-11
+Vulnerability Gather data sampling:      Not affected
+Vulnerability Indirect target selection: Not affected
+Vulnerability Itlb multihit:             Not affected
+Vulnerability L1tf:                      Not affected
+Vulnerability Mds:                       Not affected
+Vulnerability Meltdown:                  Not affected
+Vulnerability Mmio stale data:           Not affected
+Vulnerability Reg file data sampling:    Not affected
+Vulnerability Retbleed:                  Not affected
+Vulnerability Spec rstack overflow:      Not affected
+Vulnerability Spec store bypass:         Mitigation; Speculative Store Bypass disabled via prctl
+Vulnerability Spectre v1:                Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerability Spectre v2:                Mitigation; Retpolines; IBPB conditional; IBRS_FW; STIBP always-on; RSB filling; PBRSB-eIBRS Not affected; BHI Not affected
+Vulnerability Srbds:                     Not affected
+Vulnerability Tsa:                       Not affected
+Vulnerability Tsx async abort:           Not affected
+Vulnerability Vmscape:                   Not affected
+
+===== free =====
+               total        used        free      shared  buff/cache   available
+Mem:           7.3Gi       1.4Gi       5.7Gi       3.5Mi       379Mi       5.9Gi
+Swap:          2.0Gi          0B       2.0Gi
+
+===== numactl =====
+available: 1 nodes (0)
+node 0 cpus: 0 1 2 3 4 5 6 7 8 9 10 11
+node 0 size: 7463 MB
+node 0 free: 5826 MB
+node distances:
+node     0 
+   0:   10 
+
+===== mpirun =====
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    version
+
+===== mpicc =====
+gcc (Ubuntu 15.2.0-16ubuntu1) 15.2.0
+Copyright (C) 2025 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+
+===== gcc =====
+gcc (Ubuntu 15.2.0-16ubuntu1) 15.2.0
+Copyright (C) 2025 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+
+===== g++ =====
+g++ (Ubuntu 15.2.0-16ubuntu1) 15.2.0
+Copyright (C) 2025 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+
+===== gfortran =====
+GNU Fortran (Ubuntu 15.2.0-16ubuntu1) 15.2.0
+Copyright (C) 2025 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+
+===== clang =====
+unavailable
+
+===== nvidia-smi =====
+GPU 0: NVIDIA GeForce RTX 5060 (UUID: GPU-ac7825fc-0ffa-e68e-5f13-c3f3943407d1)
+
+===== rocminfo =====
+unavailable
+
+===== /home/rugers/asc-week1/src/hpl-2.3/bin/Linux_PII_CBLAS/xhpl =====
+dd7b2f3bf854eaf50bddf077829a163f85399f9576e3dbfa5d48634fb5a37ddd  /home/rugers/asc-week1/src/hpl-2.3/bin/Linux_PII_CBLAS/xhpl
+	linux-vdso.so.1 (0x00007ffd4d73f000)
+	libopenblas.so.0 => /usr/lib/x86_64-linux-gnu/libopenblas.so.0 (0x000070afb4278000)
+	libmpi.so.40 => /usr/lib/x86_64-linux-gnu/libmpi.so.40 (0x000070afb3e00000)
+	libc.so.6 => /usr/lib/x86_64-linux-gnu/libc.so.6 (0x000070afb3a00000)
+	libm.so.6 => /usr/lib/x86_64-linux-gnu/libm.so.6 (0x000070afb3cda000)
+	libmvec.so.1 => /usr/lib/x86_64-linux-gnu/libmvec.so.1 (0x000070afb3905000)
+	libgfortran.so.5 => /usr/lib/x86_64-linux-gnu/libgfortran.so.5 (0x000070afb3400000)
+	/lib64/ld-linux-x86-64.so.2 (0x000070afb6799000)
+	libucc.so.1 => /usr/lib/x86_64-linux-gnu/libucc.so.1 (0x000070afb4236000)
+	libpsm2.so.2 => /usr/lib/x86_64-linux-gnu/libpsm2.so.2 (0x000070afb41ce000)
+	libfabric.so.1 => /usr/lib/x86_64-linux-gnu/libfabric.so.1 (0x000070afb325b000)
+	libucp.so.0 => /usr/lib/x86_64-linux-gnu/libucp.so.0 (0x000070afb378d000)
+	libucs.so.0 => /usr/lib/x86_64-linux-gnu/libucs.so.0 (0x000070afb3c68000)
+	libopen-pal.so.80 => /usr/lib/x86_64-linux-gnu/libopen-pal.so.80 (0x000070afb310a000)
+	libevent_core-2.1.so.7 => /usr/lib/x86_64-linux-gnu/libevent_core-2.1.so.7 (0x000070afb3c33000)
+	libevent_pthreads-2.1.so.7 => /usr/lib/x86_64-linux-gnu/libevent_pthreads-2.1.so.7 (0x000070afb3c2e000)
+	libhwloc.so.15 => /usr/lib/x86_64-linux-gnu/libhwloc.so.15 (0x000070afb30a5000)
+	libpmix.so.2 => /usr/lib/x86_64-linux-gnu/libpmix.so.2 (0x000070afb2e00000)
+	libgcc_s.so.1 => /usr/lib/x86_64-linux-gnu/libgcc_s.so.1 (0x000070afb3077000)
+	libnuma.so.1 => /usr/lib/x86_64-linux-gnu/libnuma.so.1 (0x000070afb3069000)
+	librdmacm.so.1 => /usr/lib/x86_64-linux-gnu/librdmacm.so.1 (0x000070afb3048000)
+	libefa.so.1 => /usr/lib/x86_64-linux-gnu/libefa.so.1 (0x000070afb3039000)
+	libibverbs.so.1 => /usr/lib/x86_64-linux-gnu/libibverbs.so.1 (0x000070afb2ddb000)
+	libuct.so.0 => /usr/lib/x86_64-linux-gnu/libuct.so.0 (0x000070afb2d91000)
+	libucm.so.0 => /usr/lib/x86_64-linux-gnu/libucm.so.0 (0x000070afb2d74000)
+	libnl-3.so.200 => /usr/lib/x86_64-linux-gnu/libnl-3.so.200 (0x000070afb2d51000)
+	libudev.so.1 => /usr/lib/x86_64-linux-gnu/libudev.so.1 (0x000070afb2d0a000)
+	libmunge.so.2 => /usr/lib/x86_64-linux-gnu/libmunge.so.2 (0x000070afb3c22000)
+	libnl-route-3.so.200 => /usr/lib/x86_64-linux-gnu/libnl-route-3.so.200 (0x000070afb2c6e000)
+
+===== /home/rugers/asc-week1/src/hpcg/bin/xhpcg =====
+1b887050659039cc81cbc4d040ce82224905b59c93f2e527f9a294a241238143  /home/rugers/asc-week1/src/hpcg/bin/xhpcg
+	linux-vdso.so.1 (0x00007fff5f5e5000)
+	libmpi.so.40 => /usr/lib/x86_64-linux-gnu/libmpi.so.40 (0x00007e8b48a00000)
+	libstdc++.so.6 => /usr/lib/x86_64-linux-gnu/libstdc++.so.6 (0x00007e8b48600000)
+	libgcc_s.so.1 => /usr/lib/x86_64-linux-gnu/libgcc_s.so.1 (0x00007e8b489d2000)
+	libc.so.6 => /usr/lib/x86_64-linux-gnu/libc.so.6 (0x00007e8b48200000)
+	libucc.so.1 => /usr/lib/x86_64-linux-gnu/libucc.so.1 (0x00007e8b48990000)
+	libpsm2.so.2 => /usr/lib/x86_64-linux-gnu/libpsm2.so.2 (0x00007e8b48928000)
+	libfabric.so.1 => /usr/lib/x86_64-linux-gnu/libfabric.so.1 (0x00007e8b4845b000)
+	libucp.so.0 => /usr/lib/x86_64-linux-gnu/libucp.so.0 (0x00007e8b48088000)
+	libucs.so.0 => /usr/lib/x86_64-linux-gnu/libucs.so.0 (0x00007e8b488b8000)
+	libopen-pal.so.80 => /usr/lib/x86_64-linux-gnu/libopen-pal.so.80 (0x00007e8b47f37000)
+	libm.so.6 => /usr/lib/x86_64-linux-gnu/libm.so.6 (0x00007e8b47e11000)
+	libevent_core-2.1.so.7 => /usr/lib/x86_64-linux-gnu/libevent_core-2.1.so.7 (0x00007e8b48426000)
+	libevent_pthreads-2.1.so.7 => /usr/lib/x86_64-linux-gnu/libevent_pthreads-2.1.so.7 (0x00007e8b48dcf000)
+	libhwloc.so.15 => /usr/lib/x86_64-linux-gnu/libhwloc.so.15 (0x00007e8b47dac000)
+	libpmix.so.2 => /usr/lib/x86_64-linux-gnu/libpmix.so.2 (0x00007e8b47a00000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007e8b48e0d000)
+	libnuma.so.1 => /usr/lib/x86_64-linux-gnu/libnuma.so.1 (0x00007e8b488aa000)
+	librdmacm.so.1 => /usr/lib/x86_64-linux-gnu/librdmacm.so.1 (0x00007e8b47d8b000)
+	libefa.so.1 => /usr/lib/x86_64-linux-gnu/libefa.so.1 (0x00007e8b47d7c000)
+	libibverbs.so.1 => /usr/lib/x86_64-linux-gnu/libibverbs.so.1 (0x00007e8b47d57000)
+	libuct.so.0 => /usr/lib/x86_64-linux-gnu/libuct.so.0 (0x00007e8b47d0d000)
+	libucm.so.0 => /usr/lib/x86_64-linux-gnu/libucm.so.0 (0x00007e8b47cf0000)
+	libnl-3.so.200 => /usr/lib/x86_64-linux-gnu/libnl-3.so.200 (0x00007e8b47ccd000)
+	libudev.so.1 => /usr/lib/x86_64-linux-gnu/libudev.so.1 (0x00007e8b47c86000)
+	libmunge.so.2 => /usr/lib/x86_64-linux-gnu/libmunge.so.2 (0x00007e8b47c7e000)
+	libnl-route-3.so.200 => /usr/lib/x86_64-linux-gnu/libnl-route-3.so.200 (0x00007e8b47964000)

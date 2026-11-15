@@ -1,0 +1,3 @@
+RANKS=1 P=1 Q=1 N=2048 NB=128 THREADS=1 LAUNCHER=mpirun
+exit_code=0
+elapsed_wall_s=0

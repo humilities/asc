@@ -1,0 +1,22 @@
+实验日期：2026-11-15（北京时间）
+宿主：Windows 11，Intel Core i9-14900HX（24 物理核、32 逻辑处理器），内存约 15.6 GiB
+WSL：2.7.3.0，Ubuntu 24.04.3 LTS，x86_64
+Linux 内核：6.6.114.1-microsoft-standard-WSL2
+可见逻辑 CPU：32
+               total        used        free      shared  buff/cache   available
+Mem:           7.6Gi       742Mi       6.2Gi       3.9Mi       820Mi       6.8Gi
+Swap:          2.0Gi          0B       2.0Gi
+gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+GNU Fortran (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+GNU Make 4.3
+mpirun (Open MPI) 4.1.6
+进程启动：mpirun，默认绑定，未手动指定绑核。
+线程设置：THREADS=1（OpenMP、OpenBLAS、BLIS 和 MKL 的线程环境变量均为 1）。
+HPCG 构建为纯 MPI，含 -DHPCG_NO_OPENMP。
+OpenBLAS：Ubuntu 发行包 0.3.26+ds-1ubuntu0.1，pthread 版，解包到实验目录。
+HPL 版本：Netlib HPL 2.3
+HPCG 源码提交：114602d458d1034faa52b71e4c15aba9b3a17698
+SHA256：
+32c5c17d22330e6f2337b681aded51637fb6008d3f0eb7c277b163fadd612830 hpl-2.3.tar.gz
+123fb0845afc8098c74c0229e77e4408edd6731c9f6fc9e180af6c7d76fac88e xhpl
+ffd8f75a77b6470f1ccb5f27a1b271f3a524f09258bab897265d85b7570e8ed7 xhpcg

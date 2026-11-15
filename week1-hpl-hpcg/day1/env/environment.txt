@@ -1,0 +1,136 @@
+Timestamp: 2026-11-15T16:18:28+08:00
+Host: LAPTOP-LKSC7873
+Working directory: /home/zjq/asc-week1/src/hpcg
+Job ID: none
+HPL_BIN: /home/zjq/asc-week1/src/hpl-2.3/bin/Linux_PII_CBLAS/xhpl
+HPCG_BIN: /home/zjq/asc-week1/src/hpcg/bin/xhpcg
+
+===== uname =====
+Linux LAPTOP-LKSC7873 6.6.87.2-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux
+
+===== lscpu =====
+Architecture:                         x86_64
+CPU op-mode(s):                       32-bit, 64-bit
+Address sizes:                        39 bits physical, 48 bits virtual
+Byte Order:                           Little Endian
+CPU(s):                               20
+On-line CPU(s) list:                  0-19
+Vendor ID:                            GenuineIntel
+Model name:                           13th Gen Intel(R) Core(TM) i7-13650HX
+CPU family:                           6
+Model:                                183
+Thread(s) per core:                   2
+Core(s) per socket:                   10
+Socket(s):                            1
+Stepping:                             1
+BogoMIPS:                             5606.40
+Flags:                                fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology tsc_reliable nonstop_tsc cpuid tsc_known_freq pni pclmulqdq vmx ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves avx_vnni vnmi umip waitpkg gfni vaes vpclmulqdq rdpid movdiri movdir64b fsrm md_clear serialize flush_l1d arch_capabilities
+Virtualization:                       VT-x
+Hypervisor vendor:                    Microsoft
+Virtualization type:                  full
+L1d cache:                            480 KiB (10 instances)
+L1i cache:                            320 KiB (10 instances)
+L2 cache:                             12.5 MiB (10 instances)
+L3 cache:                             24 MiB (1 instance)
+NUMA node(s):                         1
+NUMA node0 CPU(s):                    0-19
+Vulnerability Gather data sampling:   Not affected
+Vulnerability Itlb multihit:          Not affected
+Vulnerability L1tf:                   Not affected
+Vulnerability Mds:                    Not affected
+Vulnerability Meltdown:               Not affected
+Vulnerability Mmio stale data:        Not affected
+Vulnerability Reg file data sampling: Mitigation; Clear Register File
+Vulnerability Retbleed:               Mitigation; Enhanced IBRS
+Vulnerability Spec rstack overflow:   Not affected
+Vulnerability Spec store bypass:      Mitigation; Speculative Store Bypass disabled via prctl
+Vulnerability Spectre v1:             Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerability Spectre v2:             Mitigation; Enhanced / Automatic IBRS; IBPB conditional; RSB filling; PBRSB-eIBRS SW sequence; BHI BHI_DIS_S
+Vulnerability Srbds:                  Not affected
+Vulnerability Tsx async abort:        Not affected
+
+===== free =====
+               total        used        free      shared  buff/cache   available
+Mem:            11Gi       582Mi        10Gi       3.5Mi       192Mi        10Gi
+Swap:          3.0Gi          0B       3.0Gi
+
+===== numactl =====
+available: 1 nodes (0)
+node 0 cpus: 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+node 0 size: 11821 MB
+node 0 free: 11229 MB
+node distances:
+node   0 
+  0:  10 
+
+===== mpirun =====
+mpirun (Open MPI) 4.1.6
+
+Report bugs to http://www.open-mpi.org/community/help/
+
+===== mpicc =====
+gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+Copyright (C) 2023 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+
+===== gcc =====
+gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+Copyright (C) 2023 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+
+===== g++ =====
+g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+Copyright (C) 2023 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+
+===== gfortran =====
+GNU Fortran (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+Copyright (C) 2023 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+
+===== clang =====
+unavailable
+
+===== nvidia-smi =====
+GPU 0: NVIDIA GeForce RTX 4060 Laptop GPU (UUID: GPU-584f256a-64d9-8334-a0e0-1ddb2ad269c1)
+
+===== rocminfo =====
+unavailable
+
+===== /home/zjq/asc-week1/src/hpl-2.3/bin/Linux_PII_CBLAS/xhpl =====
+123fb0845afc8098c74c0229e77e4408edd6731c9f6fc9e180af6c7d76fac88e  /home/zjq/asc-week1/src/hpl-2.3/bin/Linux_PII_CBLAS/xhpl
+	linux-vdso.so.1 (0x00007ffc6d2ee000)
+	libopenblas.so.0 => /lib/x86_64-linux-gnu/libopenblas.so.0 (0x000072e6851f0000)
+	libmpi.so.40 => /lib/x86_64-linux-gnu/libmpi.so.40 (0x000072e6850be000)
+	libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x000072e684e00000)
+	libm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x000072e684d17000)
+	libgfortran.so.5 => /lib/x86_64-linux-gnu/libgfortran.so.5 (0x000072e684800000)
+	/lib64/ld-linux-x86-64.so.2 (0x000072e687617000)
+	libopen-rte.so.40 => /lib/x86_64-linux-gnu/libopen-rte.so.40 (0x000072e684c5b000)
+	libopen-pal.so.40 => /lib/x86_64-linux-gnu/libopen-pal.so.40 (0x000072e684ba7000)
+	libhwloc.so.15 => /lib/x86_64-linux-gnu/libhwloc.so.15 (0x000072e68505d000)
+	libgcc_s.so.1 => /lib/x86_64-linux-gnu/libgcc_s.so.1 (0x000072e68502f000)
+	libz.so.1 => /lib/x86_64-linux-gnu/libz.so.1 (0x000072e685013000)
+	libevent_core-2.1.so.7 => /lib/x86_64-linux-gnu/libevent_core-2.1.so.7 (0x000072e684b72000)
+	libevent_pthreads-2.1.so.7 => /lib/x86_64-linux-gnu/libevent_pthreads-2.1.so.7 (0x000072e684b6d000)
+	libudev.so.1 => /lib/x86_64-linux-gnu/libudev.so.1 (0x000072e684b3a000)
+	libcap.so.2 => /lib/x86_64-linux-gnu/libcap.so.2 (0x000072e684b2d000)
+
+===== /home/zjq/asc-week1/src/hpcg/bin/xhpcg =====
+ffd8f75a77b6470f1ccb5f27a1b271f3a524f09258bab897265d85b7570e8ed7  /home/zjq/asc-week1/src/hpcg/bin/xhpcg
+	linux-vdso.so.1 (0x00007fff617b5000)
+	libmpi_cxx.so.40 => /lib/x86_64-linux-gnu/libmpi_cxx.so.40 (0x0000707c2a3bb000)
+	libmpi.so.40 => /lib/x86_64-linux-gnu/libmpi.so.40 (0x0000707c2a289000)
+	libstdc++.so.6 => /lib/x86_64-linux-gnu/libstdc++.so.6 (0x0000707c2a000000)
+	libgcc_s.so.1 => /lib/x86_64-linux-gnu/libgcc_s.so.1 (0x0000707c29fd2000)
+	libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x0000707c29c00000)
+	libopen-pal.so.40 => /lib/x86_64-linux-gnu/libopen-pal.so.40 (0x0000707c29f1e000)
+	libopen-rte.so.40 => /lib/x86_64-linux-gnu/libopen-rte.so.40 (0x0000707c29e62000)
+	libm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x0000707c29b17000)
+	libhwloc.so.15 => /lib/x86_64-linux-gnu/libhwloc.so.15 (0x0000707c29ab6000)
+	/lib64/ld-linux-x86-64.so.2 (0x0000707c2a415000)
+	libevent_core-2.1.so.7 => /lib/x86_64-linux-gnu/libevent_core-2.1.so.7 (0x0000707c29e2d000)
+	libevent_pthreads-2.1.so.7 => /lib/x86_64-linux-gnu/libevent_pthreads-2.1.so.7 (0x0000707c2a280000)
+	libz.so.1 => /lib/x86_64-linux-gnu/libz.so.1 (0x0000707c29a9a000)
+	libudev.so.1 => /lib/x86_64-linux-gnu/libudev.so.1 (0x0000707c29a67000)
+	libcap.so.2 => /lib/x86_64-linux-gnu/libcap.so.2 (0x0000707c29e20000)

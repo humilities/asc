@@ -1,0 +1,3 @@
+RANKS=4 NX=96 NY=96 NZ=96 SECONDS=30 THREADS=1 LAUNCHER=mpirun
+exit_code=0
+elapsed_wall_s=82

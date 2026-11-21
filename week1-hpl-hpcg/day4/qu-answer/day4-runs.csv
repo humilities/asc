@@ -1,0 +1,11 @@
+run_id,nx,ny,nz,ranks,threads,npx,npy,npz,global_dims,seconds_requested,total_time_s,gflops_rating,spmv_time_s,mg_time_s,valid,official,swap_status,exit_code,notes
+HPCG_20261121_150624_xPG4ln,64,64,64,4,1,2,2,1,128x128x64,60,67.1344,5.09955,9.23063,53.9867,VALID,NO,UNVERIFIED,0,exploratory_short_run;swap_not_proven
+HPCG_20261121_150741_OsXeDC,80,80,80,4,1,2,2,1,160x160x80,60,65.2402,5.15595,9.05368,52.6017,VALID,NO,UNVERIFIED,0,exploratory_short_run;swap_not_proven
+HPCG_20261121_150905_Vhg2v4,96,96,96,4,1,2,2,1,192x192x96,60,64.8749,4.99188,8.83195,52.6555,VALID,NO,UNVERIFIED,0,exploratory_short_run;swap_not_proven
+HPCG_20261121_151230_yAU6bN,64,64,64,1,1,1,1,1,64x64x64,60,44.3028,4.38908,5.77007,37.1501,VALID,NO,UNVERIFIED,0,exploratory_short_run;reported_time_below_requested_review;swap_not_proven
+HPCG_20261121_151318_F5bWgl,64,64,64,2,1,2,1,1,128x64x64,60,62.3684,5.28495,8.85949,50.8837,VALID,NO,UNVERIFIED,0,exploratory_short_run;swap_not_proven
+HPCG_20261121_151425_x23G8N,64,64,64,4,1,2,2,1,128x128x64,60,60.46,5.35995,8.33226,48.4206,VALID,NO,UNVERIFIED,0,exploratory_short_run;swap_not_proven
+HPCG_20261121_153556_PAHoLx,80,80,80,4,1,2,2,1,160x160x80,60,64.3571,5.18754,8.83981,51.9894,VALID,NO,UNVERIFIED,0,exploratory_short_run;swap_not_proven
+HPCG_20261121_153721_JpU7Ip,64,64,64,4,1,2,2,1,128x128x64,60,61.7188,5.24386,8.65204,49.5523,VALID,NO,UNVERIFIED,0,exploratory_short_run;swap_not_proven
+HPCG_20261121_153833_8LqOfV,64,64,64,2,1,2,1,1,128x64x64,60,64.9338,4.79534,9.19133,52.9607,VALID,NO,UNVERIFIED,0,exploratory_short_run;swap_not_proven
+HPCG_20261121_153944_Js1f0Q,64,64,64,1,1,1,1,1,64x64x64,60,62.9816,4.22263,8.50041,52.7026,VALID,NO,UNVERIFIED,0,exploratory_short_run;swap_not_proven
